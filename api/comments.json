@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "author": "Pete Hunt",
+    "text": "React is strange"
+  },
+  {
+    "id": 2,
+    "author": "Jordan Walke",
+    "text": "But its popular"
+  },
+  {
+    "id": 3,
+    "author": "Vu Dao",
+    "text": "Non related, but I learned grunt wiredep today :D"
+  }
+]
