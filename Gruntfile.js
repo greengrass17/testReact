@@ -65,6 +65,7 @@ module.exports = function(grunt) {
           '**/*.html',
           'styles/**/*.css',
           'scripts/**/*.js',
+          'scripts/**/*.jsx',
         ],
         options: {
           livereload: '<%= connect.options.livereload %>'

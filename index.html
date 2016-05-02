@@ -32,7 +32,16 @@
   <script src="bower_components/react/react-dom.js"></script>
   <!-- endbower -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
-  <script type="text/babel" src="/scripts/app.js"></script>
+  <script type="text/babel" src="/scripts/commentBox.jsx"></script>
+  <script type="text/babel" src="/scripts/commentList.jsx"></script>
+  <script type="text/babel" src="/scripts/comment.jsx"></script>
+  <script type="text/babel" src="/scripts/commentForm.jsx"></script>
+  <script type="text/babel">
+    ReactDOM.render(
+      <CommentBox url="http://localhost:3000/comments" pollInterval={2000} />,
+      document.getElementById('container')
+    );
+  </script>
 </body>
 
 </html>
