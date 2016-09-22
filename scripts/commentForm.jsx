@@ -1,6 +1,6 @@
-window.CommentBox = window.CommentBox || {}
+const React = require('react');
 
-window.CommentBox.CommentForm = React.createClass({
+module.exports = React.createClass({
   getInitialState: function () {
     return {
       author: '',
@@ -33,4 +33,3 @@ window.CommentBox.CommentForm = React.createClass({
     );
   }
 });
-

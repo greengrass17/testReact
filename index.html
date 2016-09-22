@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Basic Example with JSX</title>
-  <link rel="stylesheet" href="/styles/style.css" />
 </head>
 
 <body>
@@ -26,21 +25,13 @@
     <a href="https://facebook.github.io/react" target="_blank">facebook.github.io/react</a>.
   </p>
 
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/react/react.js"></script>
-  <script src="bower_components/react/react-dom.js"></script>
-  <!-- endbower -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
-  <script type="text/babel" src="/scripts/commentBox.jsx"></script>
+  <!-- <script type="text/babel" src="/scripts/commentBox.jsx"></script>
   <script type="text/babel" src="/scripts/commentList.jsx"></script>
   <script type="text/babel" src="/scripts/comment.jsx"></script>
-  <script type="text/babel" src="/scripts/commentForm.jsx"></script>
+  <script type="text/babel" src="/scripts/commentForm.jsx"></script> -->
+  <script type="text/babel" src="scripts.js"></script>
   <script type="text/babel">
-    ReactDOM.render(
-      <CommentBox url="http://localhost:3000/comments" pollInterval={2000} />,
-      document.getElementById('container')
-    );
   </script>
 </body>
 

@@ -1,6 +1,6 @@
-window.CommentBox = window.CommentBox || {}
+const React = require('react');
 
-window.CommentBox.Comment = React.createClass({
+module.exports = React.createClass({
   render: function () {
     return (
       <div className="comment">
@@ -10,4 +10,3 @@ window.CommentBox.Comment = React.createClass({
     );
   }
 });
-

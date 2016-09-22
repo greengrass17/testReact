@@ -1,4 +1,9 @@
-window.CommentBox = React.createClass({
+const React = require('react');
+const $ = require('jquery');
+const CommentList = require('./commentList.jsx');
+const CommentForm = require('./commentForm.jsx');
+
+module.exports = React.createClass({
   loadCommentsFromServer: function() {
     $.ajax({
       url: this.props.url,
@@ -37,8 +42,8 @@ window.CommentBox = React.createClass({
     return (
       <div className="comment-box">
         <h1>Comments</h1>
-        <CommentBox.CommentList data={this.state.data} />
-        <CommentBox.CommentForm onCommentSubmit={this.handleCommentSubmit} />
+        <CommentList data={this.state.data} />
+        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
   }

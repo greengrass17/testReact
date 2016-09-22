@@ -1,10 +1,11 @@
-window.CommentBox = window.CommentBox || {}
+const React = require('react');
+const Comment = require('./comment.jsx');
 
-window.CommentBox.CommentList = React.createClass({
+module.exports = React.createClass({
   render: function () {
     var commentNodes = this.props.data.map(function (comment) {
       return (
-        <CommentBox.Comment author={comment.author} key={comment.id}>{comment.text}</CommentBox.Comment>
+        <Comment author={comment.author} key={comment.id}>{comment.text}</Comment>
       );
     })
     return (
