@@ -1,2 +1,2 @@
-const app = require('./scripts/app.jsx');
-const style = require('./styles/main.css');
+require('./scripts/app.jsx');
+require('./styles/main.scss');
