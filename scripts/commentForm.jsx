@@ -25,10 +25,17 @@ module.exports = React.createClass({
   },
   render: function () {
     return (
-      <form className="comment-form"  onSubmit={this.handleSubmit}>
-        <input type="text" placeholder="Your name" value={this.state.author} onChange={this.handleAuthorChange} />
-        <input type="text" placeholder="Say something..." value={this.state.text} onChange={this.handleTextChange} />
-        <input type="submit" value="Send" />
+      <form className="comment-form row col-md-4"  onSubmit={this.handleSubmit}>
+        <div className="row col-md-12">
+          <input className="col-md-12" type="text" placeholder="Your name" value={this.state.author} onChange={this.handleAuthorChange} />
+        </div>
+        <div className="row col-md-12">
+          <textarea className="col-md-12" rows="4" cols="50" placeholder="Say something..." value={this.state.text} onChange={this.handleTextChange} />
+        </div>
+        {/* <input type="text" placeholder="Say something..." value={this.state.text} onChange={this.handleTextChange} /> */}
+        <div className="row col-md-3 col-md-offset-9">
+          <input className="col-md-12" type="submit" value="Send" />
+        </div>
       </form>
     );
   }

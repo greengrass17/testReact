@@ -9,7 +9,7 @@ module.exports = React.createClass({
       );
     })
     return (
-      <div className="comment-list">
+      <div className="comment-list row col-md-4">
         {commentNodes}
       </div>
     );

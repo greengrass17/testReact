@@ -4,6 +4,10 @@
   "engines": {
     "node": ">= 0.10.0"
   },
+  "main": "entry.js",
+  "scripts": {
+    "start": "webpack-dev-server -progress -colors"
+  },
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
