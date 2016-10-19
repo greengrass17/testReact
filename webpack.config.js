@@ -11,7 +11,7 @@ module.exports = {
         loader: 'style!css!sass'
       },
       {
-        test: /\.jsx$/,
+        test: /\.js|.jsx$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
